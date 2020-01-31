@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>WILD CIRCUS</title>
+<link href="/home.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<script>
+	 $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+</script>
+	<div class="wrapper">
+		<header th:fragment="header">
+			<nav>
+				<div class="menu-icon">
+					<i class="fa fa-bars fa-2x"></i>
+				</div>
+				<div class="logo"><a href="/home">Wild Circus</a></div>
+				<div class="menu">
+					<ul>
+						<li><a href="/#about_us">About us</a></li>
+						<li><a href="/performance">Perfomances</a></li>
+						<li><a href="/price">Prices</a></li>
+						<li><a href="/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section class="py-5">
+			<div class="container">
+				<h1 class="display-4">Full Page Image Slider</h1>
+				<p class="lead">
+					The background images for the slider are set directly in the HTML
+					using inline CSS. The images in this snippet are from <a
+						href="https://unsplash.com">Unsplash</a>, taken by <a
+						href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!
+				</p>
+			</div>
+		</section>
+
+		<script
+			src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

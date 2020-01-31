@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>WILD CIRCUS</title>
+<link href="/tarif.css" rel="stylesheet" type="text/css">
+<link href="/footer.css" rel="stylesheet" type="text/css">
+<link href="/home.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="css/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans&display=swap" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+		<header th:replace="navibar.html :: header">
+		</header>
+  <section class="tarif">
+  <h1>Prices</h1> 
+<div class='container'>
+
+  <div class='price-plan fancy'>
+	  <h5>Weekends and wednesdays</h5>
+    <ul class='price-points'>
+      <li class="title">Adults</li>
+		<li>20 £</li>
+      <li class="title">Children(U-12)</li>
+      <li>10 £</li>
+      <li class="title">Group(more than 10 people)</li>
+      <li>10 £/p</li>
+      <li class="title">Schools</li>
+      <li>10 £/child</li>
+    </ul>
+
+    <button url='#' class='polyFourth poly3'>Book Now!</button>
+  </div>
+
+  <div class="price-plan fancy_2">
+	  <h5>Weeks except Wednesday</h5>
+    <ul class='price-points'>
+      <li class="title">Adults</li>
+		<li>20 £</li>
+      <li class="title">Children(U-12)</li>
+      <li>10 £</li>
+      <li class="title">Group(more than 10 people)</li>
+      <li>10 £/p</li>
+      <li class="title">Schools</li>
+      <li>10 £/child</li>
+    </ul>
+
+    <button url='#' class='polyFirst poly3'>Book Now!</button>
+  </div>
+</div>
+</section>  
+
+
+	<footer th:replace="footer.html :: footer"></footer>
+		<script
+			src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script
+			src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
